@@ -1,11 +1,11 @@
-import { Fragment } from "react";
+import QuoteForm from "../components/quotes/QuoteForm";
 
 const AddQuotes = () => {
-  return (
-    <Fragment>
-      <h1>AddQuotes</h1>
-    </Fragment>
-  );
+  const addQuoteHandler = (quoteData) => {
+    console.log(quoteData);
+  };
+
+  return <QuoteForm onAddQuote={addQuoteHandler} />;
 };
 
 export default AddQuotes;

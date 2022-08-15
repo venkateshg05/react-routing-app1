@@ -1,11 +1,12 @@
-import { Fragment } from "react";
+import QuoteList from "../components/quotes/QuoteList";
+
+const DUMMY_QUOTES = [
+  { id: "q1", author: "Max", text: "Learning React is fun!" },
+  { id: "q2", author: "Maximilian", text: "Learning React is great!" },
+];
 
 const Quotes = () => {
-  return (
-    <Fragment>
-      <h1>AllQuotes</h1>
-    </Fragment>
-  );
+  return <QuoteList quotes={DUMMY_QUOTES} />;
 };
 
 export default Quotes;
